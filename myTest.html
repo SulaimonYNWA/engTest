@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vocabulary_Test</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/common.css">
+</head>
+
+<body>
+    <div id="score">
+        &#128522 correct <number id="correct">0 -</number>
+        <number id="incorrect">- 0</number> mistakes &#128530
+    </div>
+    <div id="points">0/100</div>
+
+
+    <!-- <span class="menu_burger">
+        <span></span>
+        <span></span>
+        <span></span>  
+    </span> -->
+    <div class="menu">
+        <button id="prev"> &#10094 </button>
+        <div class="fa fa-bars "></div>
+        <div class="burger_content">
+            <a href="index.html" class="burger_items"> home</a>
+            <a href="#" class="burger_items">exams<a>
+            <a href="#" class="burger_items">tutorials</a>
+            <a href="myTest.html" class="burger_items">tests</a>
+            <a href="#" class="burger_items">about</a>
+        </div>
+    </div>
+
+    <!-- <input type="checkbox" id="toggle">
+    <label for="toggle" class="toggle">
+        <div class="toggle_day">Day</div>    
+        <div class="toggle_night">Night</div>
+    </label> -->
+
+    <!-- <div id="timer"><button onclick="timer()">left: </button> <time>00</time></div> -->
+
+    <h1 id="helloName"> </h1>
+    <h1 id="hey">Hey you, just type your name</h1>
+    <div class="intro">
+        <input type="password" placeholder="Enter your name here" id="inputName">
+        <button type="button" id="submit" onclick="submit()">OK</button>
+    </div>
+
+    <div class="choice">
+        <h2 id="options">Please,choose the test</h2>
+        <button onclick="test('1')">first Eng test</button></br>
+        <button onclick="test('2')">Another one</button></br>
+        <button onclick="test('3')">Updated</button></br>
+        <button onclick="test('4')"> The last one</button><br><br>
+        <strong><b> NOTE: </b> You will have approximately 13 questions to answer.</br> Please, be honest to
+            yourself.</br>
+            <p>Good Luck!</p></br>
+            </br>
+        </strong>
+    </div>
+
+    <div class="main">
+        <div class="first">
+            <span class="a1"></span>
+            <span class="a2"></span>
+            <span class="a3"></span>
+            <span class="a4"></span>
+            <span class="a5"> </span>
+            <span class="a6"></span>
+            <span class="a7"> </span>
+            <span class="a8"></span>
+            <span class="a9"></span>
+        </div>
+        <div class="second">
+            <span class="b1"></span>
+            <span class="b2"></span>
+            <span class="b3"></span>
+            <span class="b4"> </span>
+            <span class="b5"></span>
+            <span class="b6"> </span>
+            <span class="b7"></span>
+        </div>
+
+    </div>
+
+    <ol class="vocabulary">
+        <li>what is the synonym of the word <b>"HUGE"</b>: </br>
+            <button onclick="checkAnswer('incorrect')">smart</button>
+            <button onclick="checkAnswer('incorrect')">ugly</button>
+            <button onclick="checkAnswer('correct1')">big</button>
+        </li>
+        <li>The failor is a bruise, not a tattoo. What is <b>BRUISE</b>? </br>
+            <button onclick="checkAnswer('correct2' )"> Синяк</button>
+            <button onclick="checkAnswer('incorrect')">узор</button>
+            <button onclick="checkAnswer('incorrect')">швы</button>
+            <button onclick="checkAnswer('incorrect')">Брюс Ли</button>
+
+        </li>
+        <li>what is the synonym of the word <b>"BRIBERY"</b>: </br>
+            <button onclick="checkAnswer('incorrect')">strawberry</button>
+            <button onclick="checkAnswer('incorrect')">government</button>
+            <button onclick="checkAnswer('correct3')">corrupt practices</button>
+            <button onclick="checkAnswer('incorrect')">stealing</button>
+
+        </li>
+        <li>what is the synonym of the word <b>"CONSCIENTIOUS"</b>: </br>
+            <button onclick="checkAnswer('incorrect')">fair</button>
+            <button onclick="checkAnswer('incorrect')">honest</button>
+            <button onclick="checkAnswer('incorrect')">straight</button>
+            <button onclick="checkAnswer('correct2')">all of them</button>
+        </li>
+        <li>A person who loves himself so much <b>IS</b>: </br>
+            <button onclick="checkAnswer('correct1')">selfish</button>
+            <button onclick="checkAnswer('incorrect')">lovely</button>
+            <button onclick="checkAnswer('incorrect')">arrogant</button>
+            <button onclick="checkAnswer('incorrect')">proud</button>
+        </li>
+        <li>Choose the correct wor5inease-out infinite the following sentence:</br>
+            "I may not drink cold water cause I have a _____ throat"</br>
+            <button onclick="checkAnswer('incorrect')">cold</button>
+            <button onclick="checkAnswer('incorrect')">painful</button>
+            <button onclick="checkAnswer('correct1')">sore</button>
+            <button onclick="checkAnswer('incorrect')">forgery</button>
+        </li>
+        <li>Which word is NOT the synonym of <b style="color: lightseagreen"> "FAKE"</b>: </br>
+            <button onclick="checkAnswer('incorrect')">copying</button>
+            <button onclick="checkAnswer('correct1')"> refugee</button>
+            <button onclick="checkAnswer('incorrect')">forgery</button>
+            <button onclick="checkAnswer('incorrect')">falsification</button>
+        </li>
+        <li>It is so windy outside! Put on your<b> ______</b> , son. </br>
+            <button onclick="checkAnswer('correct2')">hood</button>
+            <button onclick="checkAnswer('incorrect')">hoody</button>
+            <button onclick="checkAnswer('incorrect')">hooded</button>
+            <button onclick="checkAnswer('incorrect')">tights</button>
+        </li>
+        <li>Hey, asshole! I will prove that it is your blame. I have a lot of <b>"Evidences".</b></br>
+            Substitude the emphasized word:</br>
+            <button onclick="checkAnswer('incorrect')">memories</button>
+            <button onclick="checkAnswer('incorrect')">smugglings</button>
+            <button onclick="checkAnswer('incorrect')">criminals</button>
+            <button onclick="checkAnswer('correct2')">witnesses</button>
+        </li>
+        <li>Find a pair where is no synonyms: </br>
+            <button onclick="checkAnswer('incorrect')">explore - research</button>
+            <button onclick="checkAnswer('incorrect')">find out - investigate</button>
+            <button onclick="checkAnswer('incorrect')"> enourmous - vast</button>
+            <button onclick="checkAnswer('correct3')">all of them are synonyms</button>
+        </li>
+        <li>what is the opposite of the word <b>"ACQUITTED"</b>: </br>
+            <button onclick="checkAnswer('incorrect')">came</button>
+            <button onclick="checkAnswer('correct3')">guilty</button>
+            <button onclick="checkAnswer('incorrect')">accepted</button>
+            <button onclick="checkAnswer('incorrect')">fainted</button>
+        </li>
+        <li>whooo live5inease-out infinite a pineapple under the sea? </br>
+            <button onclick="checkAnswer('incorrect')">shark</button>
+            <button onclick="checkAnswer('incorrect')">Patrick</button>
+            <button onclick="checkAnswer('correct')">spange Bob</button>
+            <button onclick="checkAnswer('incorrect')">I don't care</button>
+        </li>
+        <li>I ______ on you. Do not let me down, please </br>
+            <button onclick="checkAnswer('incorrect')">put</button>
+            <button onclick="checkAnswer('incorrect')">hope</button>
+            <button onclick="checkAnswer('correct2')">rely</button>
+            <button onclick="checkAnswer('incorrect')">believe</button>
+        </li>
+        <li>Yesterday we had dinne5inease-out infinite Chinese restaurant and now I am feeling bad.<br>
+            I suppose I got <b>"________"</b>: </br>
+            <button onclick="checkAnswer('incorrect')">sick</button>
+            <button onclick="checkAnswer('incorrect')">ill</button>
+            <button onclick="checkAnswer('incorrect')">flu</button>
+            <button onclick="checkAnswer('correct2')">poisoning</button>
+        </li>
+        <li>Estimate the test from 0 to 10 if you liked it </br>
+            <input type="number" id="range" placeholder="0-10"> <button onclick="send()" id="send">send</button> </li>
+    </ol>
+    <div id="feedback"></div>
+    <button type="button" id="showResult" onclick="showResult()">I wanna see my results</button>
+    <div id="wordlist">
+        <ol>
+            <li>huge - vast -enormouse - big -massive</li>
+            <li>failor - Неудача - провал </li>
+            <li>arrogant - высокомерный </li>
+            <li> refugee - беженец </li>
+            <li> hood - капюшон, hoody - толстовка, tights - колготки </li>
+        </ol>
+    </div>
+    <h3 id="gg"> </h3>
+    <script src="/js/index.js"></script>
+
+</body>
+
+</html>
