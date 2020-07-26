@@ -272,9 +272,12 @@ header{
     align-self: center;
 }
 .container1 .card{
-    margin: 20px ;
+    margin-top: 20px ;
     z-index: 1;
-    width: 100%;
+    width: 80vw;
+    display: flex;
+    margin: 20px;
+    justify-content: center;
 
 }
 
@@ -356,6 +359,11 @@ header{
     }
     .container1{
         margin-left: 80px;
+
+    }
+    .container1 .card{
+        width: 18rem;
+
 
     }
 
