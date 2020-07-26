@@ -61,7 +61,7 @@ header{
     align-self: center;
     margin-left: 10vw;
     color: #61a8a8;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 .header1{
@@ -138,6 +138,8 @@ header{
     position: absolute;
     top: 5px;
     left: 2px;
+    font-weight: 800;
+    height: 50px;
     animation: faMenu 2s linear forwards;
 }
 
@@ -370,7 +372,7 @@ header{
         width: auto;
         padding: 0;
         position: absolute;
-        left: 20vw;
+        left: 10vw;
         align-self: center;
     }
     .links a{
@@ -392,7 +394,7 @@ header{
         width: auto;
         padding: 0;
         position: absolute;
-        right: 30vw; 
+        right: 20vw; 
         align-self: center;
     }
     .links2 a{
