@@ -16,7 +16,7 @@ header{
     position: relative;
 }
 
-header .row  a{
+.links, .links2{
     display: none;
 }
 /* .col-12{
@@ -26,10 +26,13 @@ header .row  a{
     width: 100%;
     border: red solid 1px;
 } */
-header .row  img{
-    display: flex;
-    justify-self: center;
-    justify-content: center;
+
+.row{
+    position: absolute;
+    top: 0;
+    left: 50vw;
+    transform: translateX(-50%);
+    /* border: red 1px solid; */
 }
 
 .header{
@@ -77,6 +80,7 @@ header .row  img{
     color: rgb(73, 34, 34);
     font-weight: 500;
 }
+
 
 .burger_content{
     display: none;
@@ -265,12 +269,12 @@ header .row  img{
     flex-wrap: wrap;
     max-width: 1270px;
     margin: 50px;
-    margin-left: 80px;
     align-self: center;
 }
 .container1 .card{
-    margin: 20px 40px;
+    margin: 20px ;
     z-index: 1;
+    width: 100%;
 
 }
 
@@ -350,6 +354,50 @@ header .row  img{
         width: 100vw;
         left: 0;
     }
+    .container1{
+        margin-left: 80px;
+
+    }
+
+    .links{
+        /* border: 1px red solid;  */
+        display: flex; 
+        width: auto;
+        padding: 0;
+        position: absolute;
+        left: 20vw;
+        align-self: center;
+    }
+    .links a{
+        justify-content: space-evenly;
+        margin-left: 30px;
+        margin-right: 0;
+        margin-right: 0;
+        /* border: red solid 1px; */
+        width: 60px;
+        display: flex;
+    }
+    .links a:nth-last-child(1), .links2 a:nth-child(1){
+        display: none;
+    }
+    .links2{
+        /* border: 1px red solid;  */
+        display: flex; 
+        width: auto;
+        padding: 0;
+        position: absolute;
+        right: 30vw; 
+        align-self: center;
+    }
+    .links2 a{
+        justify-content: space-evenly;
+        margin-left: 50px;
+        margin-right: 0;
+        margin-right: 0;
+        /* border: red solid 1px; */
+        display: flex;
+    }
+
     .menu{
         display: none;
     }
