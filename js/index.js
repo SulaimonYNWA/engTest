@@ -1,3 +1,11 @@
+
+function switchLang(lang){
+    document.getElementsByClassName('flag_img')[0].src = "img/"+lang+".png"; // for mobile screens
+    document.getElementsByClassName('language')[0].innerHTML = lang; // for mobile screens
+    // document.getElementsByClassName('flag_img')[1].src = "img/"+lang+".png"; // for larger screens
+    // document.getElementsByClassName('language')[1].innerHTML = lang; // for larger screens
+}
+
 var submit = () => {
     var name = document.getElementById('inputName').value;
     document.querySelector('#helloName').style.color = 'rgb(209, 68, 228)'
