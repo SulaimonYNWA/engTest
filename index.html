@@ -9,85 +9,92 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="styles/common.css">
   <link rel="stylesheet" href="styles/home.css">
 
 </head>
 
 <body>
   <header>
+    <div class="fa fa-bars "></div>
+    <div id="prev" class="fa fa-times" aria-hidden="true"></div>
     <div class="menu">
-      <button id="prev"> &#10094 </button>
-      <div class="fa fa-bars "></div>
       <div class="burger_content">
-        <a href="index.html" class="burger_items"> home</a>
-        <a href="#" class="burger_items">exams<a>
-            <a href="#" class="burger_items">tutorials</a>
-            <a href="myTest.html" class="burger_items">tests</a>
-            <a href="#" class="burger_items">about</a>
-      </div>
-    </div>
-    <div class="header1" >
-      <!-- <a href="#907057575"> tel: 907057575 </a> -->
-      <a class="tel" href="tel: +992 907057575"> <span>+992 907 05 75 75</span></a>
+         <div class="burger_items"><a href="index.html" class=""><i class="fa fa-home fa-fw" aria-hidden="true" ></i> home</a></div> 
+          <div class="burger_items school"><a href="#" ><i class="fa fa-university" aria-hidden="true"></i>schools</a>
+            <ul class="schools">
+              <li> <a href="#">M.B.O.</a></li>
+              <li><a href="#"> Bactria</a> </li>
+              <li> <a href="#">American school</a></li>
+              <li> <a href="#">Polyglot</a></li>
+              <li> <a href="#">World of language</a></li>
+              <li> <a href="#">Samand</a></li>
+              <li> <a href="#">faridun-3</a></li>
+              <li> <a href="#">ilmHona</a></li>
 
-    </div>  
+            </ul>
+          </div>
+          <div class="burger_items"><a href="myTest.html"><i class="fa fa-graduation-cap" aria-hidden="true"></i>tests</a></div>
+          <div class="burger_items"> <a href="#" >prices<a></div>
+          <div class="burger_items"><a href="#">about</a></div>
+
+        </div>
+    </div>
+    <!-- <div class="header1">
+         <a href="#907057575"> tel: 907057575 </a> 
+      </div> -->
     <div class="header">
-      
+
       <div class="links">
-        <a href="index.html" > home</a>
-        <a href="myTest.html" >tests</a>
+        <a href="index.html"> home</a>
+        <a href="myTest.html">tests</a>
         <a href="myTest.html">exams<a>
       </div>
 
-      <div class="row">
-        <img src="./img/logo.jpg" style="height: 50px;" alt="">
-      </div>
+      <img src="./img/logo.jpg" style="height: 50px;" alt="">
 
       <div class="links2">
-        <a href="#" >tutorials</a>
+        <a href="#">centers</a>
         <a href="#">about</a>
       </div>
-        <!-- <div class="col-12"> -->
-          <!-- <a href="#"> HOME </a>
+      <!-- <div class="col-12"> -->
+      <!-- <a href="#"> HOME </a>
               <a href="#"> EXAMS </a> -->
-          <!-- <a href="#"> TUTORIALS </a>
+      <!-- <a href="#"> TUTORIALS </a>
               <a href="#"> TESTS </a> -->
-        <!-- </div> -->
+      <!-- </div> -->
+    </div>
 
 
-      <div class="header__top__right__language">
-        <img src="img/rus.png" alt="" class="flag_img">
-        <div class="language">rus</div>
-        <span class="arrow_carrot-down"></span>
-        <ul class="hover_lang">
-          <li><button onclick="switchLang('rus')"> <img id="rusFlag" src="img/rus.png" alt="">rus</button></li>
-          <li><button onclick="switchLang('eng')"> <img id="engFlag" src="img/eng.png" alt="">eng</button></li>
-        </ul>
-      </div>
-
+    <div class="header__top__right__language">
+      <img src="img/rus.png" alt="" class="flag_img">
+      <div class="language">rus</div>
+      <span class="arrow_carrot-down"></span>
+      <ul class="hover_lang">
+        <li><button onclick="switchLang('rus')"> <img id="rusFlag" src="img/rus.png" alt="">rus</button></li>
+        <li><button onclick="switchLang('eng')"> <img id="engFlag" src="img/eng.png" alt="">eng</button></li>
+      </ul>
     </div>
     <!-- <a href="#"> L </a> -->
     <!-- <a href="#"> L </a> -->
   </header>
 
-  <div class="col-md-12 col-lg-2" >
+  <div class="col-md-12 col-lg-2">
     <div id="carouselFade" class="carousel slide carousel-fade" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <a href="#american"><img src="./img/american.jpg" class="d-block w-100"  alt="..."></a>
+          <a href="#american"><img src="./img/american.jpg" class="d-block w-100" alt="..."></a>
         </div>
         <div class="carousel-item">
-          <img src="./img/polyglot.jpg" class="d-block w-100"  alt="...">
+          <img src="./img/polyglot.jpg" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="./img/mbo.jpg" class="d-block w-100"  alt="...">
+          <img src="./img/mbo.jpg" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="./img/samand.jpg" class="d-block w-100"  alt="...">
+          <img src="./img/samand.jpg" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="./img/wl.jpg" class="d-block w-100"  alt="...">
+          <img src="./img/wl.jpg" class="d-block w-100" alt="...">
         </div>
       </div>
       <a class="carousel-control-prev" href="#carouselFade" role="button" data-slide="prev">
@@ -173,7 +180,7 @@
 
 
   <footer>
-    
+
   </footer>
   <div class="footer">
     <div class="icons">

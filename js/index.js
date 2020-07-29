@@ -22,6 +22,7 @@ var submit = () => {
     }
 }
 
+//show the test that was clicked
 var test = (test) => {
     document.querySelector('.main').style.display = 'none'
     if (test === '1') {
@@ -38,6 +39,7 @@ var test = (test) => {
     }
 }
 
+//estimate the test
 var send = () => {
     var number = document.getElementById('range').value;
     if (number <= 0 || number > 10) {
@@ -52,6 +54,7 @@ var send = () => {
     document.querySelector('#showResult').style.display = 'block';
 }
 
+//show the result on the top of screen
 var showResult = () => {
     document.getElementById('score').style.display = 'block';
     document.getElementById('wordlist').style.display = 'block';
@@ -59,6 +62,7 @@ var showResult = () => {
     score.style.display = 'block';
 }
 
+//show if the answer is correct or incorrect
 var correct = 0;
 var incorrect = 0;
 var points = 0;
@@ -111,16 +115,16 @@ function checkAnswer(isCorrect) {
 //    thirdSpan.style.top = '-6px'
 // })
 
-
+//burger functions
 let prev = document.querySelector('#prev');
 const burger_content = document.querySelector('.burger_content');
-const fa_menu = document.querySelector('.fa');
+const fa_menu = document.querySelector('.fa-bars');
 
 prev.addEventListener("click", () => {
     fa_menu.style.display = 'block';
-    fa_menu.style.animation = `faMenu 1s ease-out forwards`
+    fa_menu.style.animation = `faMenu .5s ease-in forwards`
     burger_content.style.animation = `removeMenu .5s ease-in forwards`;
-    prev.style.animation = `removeMenu .5s ease-in forwards`
+    prev.style.display= 'none' ;
 
 })
 fa_menu.addEventListener("click", () => {
@@ -128,7 +132,7 @@ fa_menu.addEventListener("click", () => {
         fa_menu.style.display = 'none';
         burger_content.style.display = 'block';
         burger_content.style.animation = `showMenu .5s ease-in forwards`
-        prev.style.animation = `showMenu .5s ease-in forwards`
+        prev.style.animation = `showPrev .5s ease-in forwards`
 
 
         // burger_content.style.transform = `translateX(100%)`;
