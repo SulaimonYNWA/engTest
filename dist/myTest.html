@@ -7,11 +7,78 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Vocabulary_Test</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/styles/style.css">
-    <link rel="stylesheet" href="/styles/common.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="styles/home.css">
+
 </head>
 
 <body>
+    <header>
+        <div class="fa fa-bars"></div>
+    <div id="prev" class="fa fa-times" aria-hidden="true"></div>
+    <div class="menu">
+      <div class="burger_content">
+         <div class="burger_items"><a href="index.html" class=""><i class="fa fa-home fa-fw" aria-hidden="true" style="position: relative;transform: translateY(15%);"></i> home</a></div> 
+          <div class="burger_items school"><a href="#" >schools</a>
+            <ul class="schools">
+              <li> <a href="#">M.B.O.</a></li>
+              <li><a href="#"> Bactria</a> </li>
+              <li> <a href="#">American school</a></li>
+              <li> <a href="#">Polyglot</a></li>
+              <li> <a href="#">World of language</a></li>
+              <li> <a href="#">Samand</a></li>
+              <li> <a href="#">faridun-3</a></li>
+              <li> <a href="#">ilmHona</a></li>
+
+            </ul>
+          </div>
+          <div class="burger_items"><a href="myTest.html">tests</a></div>
+          <div class="burger_items"> <a href="#" >prices<a></div>
+          <div class="burger_items"><a href="#">about</a></div>
+
+        </div>
+    </div>
+            <!-- <div class="header1">
+             <a href="#907057575"> tel: 907057575 </a> 
+          </div> -->
+          <div class="header">
+    
+            <div class="links">
+              <a href="index.html"> home</a>
+              <a href="myTest.html">tests</a>
+              <a href="myTest.html">exams<a>
+            </div>
+    
+            
+              <img src="./img/logo.jpg" style="height: 50px;" alt="">
+            
+    
+            <div class="links2">
+              <a href="#">centers</a>
+              <a href="#">about</a>
+            </div>
+            <!-- <div class="col-12"> -->
+            <!-- <a href="#"> HOME </a>
+                  <a href="#"> EXAMS </a> -->
+            <!-- <a href="#"> TUTORIALS </a>
+                  <a href="#"> TESTS </a> -->
+            <!-- </div> -->
+          </div>
+    
+    
+            <div class="header__top__right__language">
+              <img src="img/rus.png" alt="" class="flag_img">
+              <div class="language">rus</div>
+              <span class="arrow_carrot-down"></span>
+              <ul class="hover_lang">
+                <li><button onclick="switchLang('rus')"> <img id="rusFlag" src="img/rus.png" alt="">rus</button></li>
+                <li><button onclick="switchLang('eng')"> <img id="engFlag" src="img/eng.png" alt="">eng</button></li>
+              </ul>
+            </div>
+          <!-- <a href="#"> L </a> -->
+          <!-- <a href="#"> L </a> -->
+      </header>
+
     <div id="score">
         &#128522 correct <number id="correct">0 -</number>
         <number id="incorrect">- 0</number> mistakes &#128530
@@ -30,7 +97,7 @@
         <div class="burger_content">
             <a href="index.html" class="burger_items"> home</a>
             <a href="#" class="burger_items">exams<a>
-            <a href="#" class="burger_items">tutorials</a>
+            <a href="#" class="burger_items">centers</a>
             <a href="myTest.html" class="burger_items">tests</a>
             <a href="#" class="burger_items">about</a>
         </div>
@@ -47,7 +114,7 @@
     <h1 id="helloName"> </h1>
     <h1 id="hey">Hey you, just type your name</h1>
     <div class="intro">
-        <input type="password" placeholder="Enter your name here" id="inputName">
+        <input type="text" inputmode="latin-name" placeholder="Enter your name here" id="inputName">
         <button type="button" id="submit" onclick="submit()">OK</button>
     </div>
 
@@ -120,7 +187,7 @@
             <button onclick="checkAnswer('incorrect')">arrogant</button>
             <button onclick="checkAnswer('incorrect')">proud</button>
         </li>
-        <li>Choose the correct wor5inease-out infinite the following sentence:</br>
+        <li>Choose the correct word in the following sentence:</br>
             "I may not drink cold water cause I have a _____ throat"</br>
             <button onclick="checkAnswer('incorrect')">cold</button>
             <button onclick="checkAnswer('incorrect')">painful</button>
@@ -158,7 +225,7 @@
             <button onclick="checkAnswer('incorrect')">accepted</button>
             <button onclick="checkAnswer('incorrect')">fainted</button>
         </li>
-        <li>whooo live5inease-out infinite a pineapple under the sea? </br>
+        <li>whooo lives in a pineapple under the sea? </br>
             <button onclick="checkAnswer('incorrect')">shark</button>
             <button onclick="checkAnswer('incorrect')">Patrick</button>
             <button onclick="checkAnswer('correct')">spange Bob</button>
@@ -170,7 +237,7 @@
             <button onclick="checkAnswer('correct2')">rely</button>
             <button onclick="checkAnswer('incorrect')">believe</button>
         </li>
-        <li>Yesterday we had dinne5inease-out infinite Chinese restaurant and now I am feeling bad.<br>
+        <li>Yesterday we had dinner in Chinese restaurant and now I am feeling bad.<br>
             I suppose I got <b>"________"</b>: </br>
             <button onclick="checkAnswer('incorrect')">sick</button>
             <button onclick="checkAnswer('incorrect')">ill</button>
@@ -192,7 +259,7 @@
         </ol>
     </div>
     <h3 id="gg"> </h3>
-    <script src="/js/index.js"></script>
+    <script src="./js/index.js"></script>
 
 </body>
 
