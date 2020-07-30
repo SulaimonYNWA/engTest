@@ -8,7 +8,9 @@ function switchLang(lang){
 
 var submit = () => {
     var name = document.getElementById('inputName').value;
-    document.querySelector('#helloName').style.color = 'rgb(209, 68, 228)'
+    let helloName = document.querySelector('#helloName');
+    helloName.style.color = 'rgb(209, 68, 228)';
+    helloName.style.marginTop = '120px';
     document.getElementById('helloName').innerHTML = 'Welcome to my test, ' + name + 'jan';
     document.querySelector('#hey').style.display = 'none';
     document.querySelector('.intro').style.display = 'none';
