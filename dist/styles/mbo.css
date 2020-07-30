@@ -1,0 +1,41 @@
+.card{
+    position: relative;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#mboLogo{
+    position: relative;
+    top: 3.05rem;
+    transform: translateX(-50%);
+    left: 50%;
+    background-color: #999999;
+    border-radius: 0 0 10px 10px ;
+    border-top: 1px solid white;
+    width: 14em;
+    margin-bottom: 50px;
+}
+.link_mbo{
+    position: absolute;
+    right: 4em;
+}
+.link_mbo a{
+    margin: 1em;
+}
+.mbo_course{
+    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em;
+    color: #9f0b0f;
+    margin-left: 1em;
+}
+ .collapse{
+     position: relative;
+     top: 0;
+     left: 1em;
+ }
+ .collapse .card{
+    width: 14em;
+    border: 1px black solid;
+
+}
