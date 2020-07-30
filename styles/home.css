@@ -338,9 +338,7 @@ header::after{
     padding: 5px 10px;
     
 }
-.header__top__right__language{
-   
-}
+
 
 
 
@@ -442,29 +440,32 @@ header::after{
     position: absolute;
     left: 0;
     top: 20px;
-    font-size: 64px;
     display: flex;
     color: #9e0b0f;
     justify-content: center;
     align-items: center;
     transition: all .5s;
+    -webkit-transition: all, 0.5s;
+	-moz-transition: all, 0.5s;
+	-ms-transition: all, 0.5s;
+	-o-transition: all, 0.5s;
     z-index: 2;
 }
 .first::before{
-    background: url('/dist/img/teacher_bakha.jpg') no-repeat;
+    background: url('img/teacher_bakha.jpg') no-repeat;
     background-size: 100%;
     
 }
 .second::before{
-    background: url('/dist/img/teacher_me.jpg') no-repeat;
+    background: url('img/teacher_me.jpg') no-repeat;
     background-size: 100%;
 }
 .third::before{
-    background: url('/dist/img/teacher_dovud.jpg') no-repeat;
+    background: url('img/teacher_dovud.jpg') no-repeat;
     background-size: 100%;
 }
 .fourth::before{
-    background: url('/dist/img/teacher_abuali.jpg') no-repeat;
+    background: url('img/teacher_abuali.jpg') no-repeat;
     background-size: 100%;
 
 }
@@ -487,6 +488,10 @@ header::after{
 .teacher_card .icons a:hover{
     transform: scale(1.2);
     transition: all .5s;
+    -webkit-transition: all, 0.5s;
+	-moz-transition: all, 0.5s;
+	-ms-transition: all, 0.5s;
+	-o-transition: all, 0.5s;
 }
 
 
