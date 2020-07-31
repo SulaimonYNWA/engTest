@@ -29,13 +29,55 @@
     color: #9f0b0f;
     margin-left: 1em;
 }
- .collapse{
-     position: relative;
-     top: 0;
-     left: 1em;
- }
- .collapse .card{
-    width: 14em;
-    border: 1px black solid;
+ 
+
+.borders{
+    border: #9f0b0f 1px solid;
+    border-radius: .5em;
+    box-shadow: 2px 2px 0 #9f0b00;
+    height: 100%;
+    transform: translateY(30vh);
+}
+.mbo_main{
+    border: black 2px solid;
+}
+
+.mbo_main .row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.list-group{
+}
+
+.list-group-item{
+    background: linear-gradient( to right, #8aa7ec, #999999);
+    color: white;
+}
+.list-group-item:hover{
+    transition: all .4s;
+}
+
+.list-group .active{
+    background-color: whitesmoke;
+    color: black;
+    border: #9f0b0f solid .5px;
+    transform: translateX(1em);
+    border-radius: 0 8px 8px 0;
+}
+
+
+@media screen and (min-width: 576px) {
 
 }
+
+@media screen and (min-width: 1024px) {
+    .borders{
+        height: 100%;
+        position: relative;
+        transform: translateY(100px);
+        border: black solid 2px ;
+    }
+
+}
+

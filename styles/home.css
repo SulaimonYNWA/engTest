@@ -369,7 +369,7 @@ header::after{
     margin-top: 50px;
     background-color: rgb(168, 97, 97);
     width: 98vw;
-    left: -2vw;
+    left: 0;
     height: 16rem;
     display: flex;
     justify-content: center;
@@ -452,25 +452,30 @@ header::after{
     z-index: 2;
 }
 .first::before{
-    background: url('img/teacher_bakha.jpg') no-repeat;
+    background: url('../img/teacher_dovud.jpg') no-repeat;
     background-size: 100%;
-    
 }
 .second::before{
-    background: url('img/teacher_me.jpg') no-repeat;
+    background: url("../img/teacher_me.jpg") no-repeat;
     background-size: 100%;
 }
 .third::before{
-    background: url('img/teacher_dovud.jpg') no-repeat;
+    background: url('../img/teacher_dovud.jpg') no-repeat;
     background-size: 100%;
 }
 .fourth::before{
-    background: url('img/teacher_abuali.jpg') no-repeat;
+    background: url('../img/teacher_abuali.jpg') no-repeat;
     background-size: 100%;
 
 }
 .teacher_card:hover::before{
-    transform: translateY(-100%);
+    /* -webkit-transform: translate3d(-100%); */
+    /* transform: translateY(-100%); */
+    transform: rotateY(90deg);
+    -webkit-transform: rotateY(90deg);
+    -moz-transform: rotateY(90deg);
+    -ms-transform: rotateY(90deg);
+    -o-transform: rotateY(90deg);
 }
 .teacher_card .icons{
     display: flex;
