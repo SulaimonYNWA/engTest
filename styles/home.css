@@ -501,6 +501,28 @@ header::after{
 
 
 
+.schools_footer{
+    display: flex;
+    flex-direction: column;   
+    width: 200px;
+    color: oldlace;
+    margin: 10px;
+}
+.schools_footer a{
+    display: flex;
+    color: oldlace;
+    font-weight: 500;
+}
+
+.my_contact{
+    display: flex;
+    flex-direction: column;
+    margin:0 0 0px 12px;
+    color: white;
+}
+.my_contact a:hover{
+    color: #ffffff;
+}
 
 
 @media screen and (min-width: 576px) {
@@ -556,6 +578,10 @@ header::after{
     .header , .header1{
         width: 100vw;
         left: 0;
+    }
+
+    .fa-bars{
+        display: none;
     }
     .header__top__right__language{
         left:50px;
@@ -628,14 +654,15 @@ header::after{
 
 footer{
     margin-top: 500px ;
-    background: rgb(168, 97, 97);
+    background: #6c6c6c;
     height: 50vh;
     width: 100vw;
 }
 .footer{
-    height: 100px;
+    height: 100%;
     width: 100vw;
-    background: rgb(73, 34, 34);
+    /* background: rgb(73, 34, 34); */
+    background: #191919;
 }
 .footer .icons{
     display: flex;
@@ -648,12 +675,14 @@ footer{
     cursor: pointer;
     color: white;
     margin: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     padding: 5px;
     font-size: 24px;
 }
 
 .footer .icons i:hover{
-    color: #61a8a8;
+    /* color: #61a8a8; */
+    /* color: #6c6c6c; */
+    text-shadow:  0px 0px 10px #6c6c6c;
     transform: scale(1.3);
 }

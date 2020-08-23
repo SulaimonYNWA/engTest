@@ -66,6 +66,36 @@
     border-radius: 0 8px 8px 0;
 }
 
+.price_cards{
+    margin-top: 30px;
+    padding: 15px;
+    border: 1px solid red;
+    display: flex;
+    justify-self: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.price_cards h3{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    color: #1f1e1f;
+    /* background: linear-gradient( to right, #8aa7ec, #999999); */
+    background: linear-gradient( to right, #2aa7fc, #aec1ff);
+
+}
+.price_cards .btn-primary{
+    max-width: 85%;
+    transform:translateX(5%);
+}
+.text-white{
+    max-width: 16rem;
+}
+.mb-3{
+     margin: 15px 10px;
+     border-radius: 10px;
+}
 
 @media screen and (min-width: 576px) {
 
@@ -78,6 +108,11 @@
         transform: translateY(100px);
         border: black solid 2px ;
     }
+    .text-white{
+        max-width: 16rem;
+        margin: 20px 30px;
+    }
 
+   
 }
 
